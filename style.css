@@ -178,7 +178,7 @@ body {
     color: var(--text-primary);
 }
 
-/* ===== PROFILE IMAGE (Normal Size) ===== */
+/* ===== PROFILE IMAGE ===== */
 .profile-image {
     width: 220px;
     height: 220px;
@@ -288,9 +288,17 @@ body {
     line-height: 1.8;
 }
 
-.code-comment { color: #6a6a80; }
-.code-keyword { color: #3b82f6; }
-.code-string { color: #34d399; }
+.code-comment {
+    color: #6a6a80;
+}
+
+.code-keyword {
+    color: #3b82f6;
+}
+
+.code-string {
+    color: #34d399;
+}
 
 /* ===== SERVICES ===== */
 .services {
