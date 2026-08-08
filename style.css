@@ -178,9 +178,10 @@ body {
     color: var(--text-primary);
 }
 
+/* ===== PROFILE IMAGE (Normal Size) ===== */
 .profile-image {
-    width: 280px;
-    height: 280px;
+    width: 220px;
+    height: 220px;
     border-radius: 50%;
     object-fit: cover;
     border: 4px solid var(--accent);
@@ -465,8 +466,8 @@ body {
     }
 
     .profile-image {
-        width: 180px;
-        height: 180px;
+        width: 150px;
+        height: 150px;
     }
 
     .nav-links {
