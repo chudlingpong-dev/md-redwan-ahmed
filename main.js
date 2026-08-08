@@ -1,4 +1,3 @@
-// ===== HAMBURGER MENU =====
 const hamburger = document.getElementById('hamburger');
 const navLinks = document.getElementById('navLinks');
 
@@ -14,7 +13,6 @@ document.querySelectorAll('.nav-links a').forEach(link => {
     });
 });
 
-// ===== CONTACT FORM =====
 const contactForm = document.getElementById('contactForm');
 if (contactForm) {
     contactForm.addEventListener('submit', (e) => {
@@ -24,7 +22,6 @@ if (contactForm) {
     });
 }
 
-// ===== SCROLL ANIMATION =====
 const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
         if (entry.isIntersecting) {
@@ -41,18 +38,7 @@ document.querySelectorAll('.service-card, .work-item, .about-grid, .contact-cont
     observer.observe(el);
 });
 
-// ===== DYNAMIC YEAR =====
 const footer = document.querySelector('.footer p');
 if (footer) {
     footer.innerHTML = `© ${new Date().getFullYear()} Md Redwan Ahmed — Built with ❤️ from Bangladesh.`;
 }
-
-// ===== SYNTAX HIGHLIGHTING FOR CODE BLOCK =====
-document.querySelectorAll('.code-block code').forEach(block => {
-    let html = block.innerHTML;
-    html = html
-        .replace(/\/\/.*/g, match => `<span class="code-comment">${match}</span>`)
-        .replace(/\b(const|let|var|function|return|if|else|for|while)\b/g, match => `<span class="code-keyword">${match}</span>`)
-        .replace(/".*?"/g, match => `<span class="code-string">${match}</span>`);
-    block.innerHTML = html;
-});
